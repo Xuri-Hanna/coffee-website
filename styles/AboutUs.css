@@ -1,0 +1,81 @@
+@import "MainBase.css";
+.background-wrapper {
+    padding-top: 100px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.background-wrapper img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.background-wrapper h1{
+    position: absolute;
+    bottom: 100px;
+    color: rgb(228, 206, 175);
+    left: calc((100% - 1300px)/2);
+    font-size: xxx-large;
+    font-style: italic;
+}
+.quote-container {
+    color: rgb(188, 110, 50);
+}
+.introduction-container{
+    background: rgba(80, 44, 20, 1) !important;
+}
+.introduction-container .sub-content,.sub-title{
+    color: #ffffff !important;
+}
+.rule-container{
+    background: rgba(255, 251, 245, 1);
+}
+.rule-container .main-title{
+    color: rgb(228, 206, 175);
+    font-size: xxx-large;
+}
+
+.rule-container h1{
+    text-align: center;
+}
+.rule-container > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.rule-container .image-wrapper{
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+.rule-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-wrapper{
+    max-width: 500px;
+}
+.content-wrapper > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.content-wrapper h1{
+    font-size: xxx-large;
+    color: rgba(80, 44, 20, 1);
+}
+.content-wrapper h2{
+    color: rgba(80, 44, 20, 1);
+}
+.content-wrapper p{
+    color: rgb(188, 110, 50);
+}
+@media screen and (min-width: 768px) {
+    .rule-container > div > div{
+        flex-direction: row;
+    }
+}

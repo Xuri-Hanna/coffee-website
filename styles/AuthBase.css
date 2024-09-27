@@ -1,0 +1,30 @@
+@import "MainBase.css";
+body{
+    background: #e6e6e6;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+
+}
+.button{
+    display: block;
+    padding: 15px 40px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.input{
+    border: none;
+    padding: 15px 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px;
+    background: #fff;
+    line-height: 1.2;
+}

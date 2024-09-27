@@ -1,0 +1,115 @@
+@import "MainBase.css";
+.product-container{
+    background: rgba(255, 251, 245, 1);
+    padding-top: 100px;
+}
+.product-container hr{
+    border-top: 1px solid rgb(80, 44, 20);
+    max-width: 1300px;
+    width: 100%;
+    margin-top: 20px;
+}
+.product-container > div{
+    display: flex;
+    flex-direction: column;
+}
+.product-container > div:nth-child(1){
+    margin-top: 100px;
+}
+.product-container .image-wrapper{
+    max-width: 600px;
+    height: 400px;
+    width: 100%;
+}
+.image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-container .main-title,h3{
+    color: rgb(80, 44, 20);
+    font-weight: bold;
+}
+.product-container .price{
+    color: rgb(188, 110, 50);
+}
+.product-container .radio-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 15px;
+
+}
+.radio-container input{
+    display: none;
+}
+.radio-container input:checked + label{
+    color: #ffffff;
+    background: rgb(188, 110, 50);
+}
+
+.radio-container label{
+    border: 1px solid rgb(80, 44, 20);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: rgb(188, 110, 50);
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 10px 0;
+}
+.product-container > div:nth-child(1) .primary-button{
+    margin-top: 20px;
+    width: 100%;
+}
+.radio-container img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    object-fit: fill;
+}
+.product-container .description{
+    flex-direction: column;
+}
+.product-container .products-list{
+    flex-direction: column;
+}
+.products-list p{
+    text-align: center;
+}
+.products-list > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.products-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.products-list .image-wrapper{
+    max-width: 200px;
+    height: 150px;
+    width: 100%;
+}
+.product-container .input-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.input-wrapper label{
+    color: rgb(80, 44, 20);
+    font-weight: bold;
+    font-size: large;
+}
+
+@media screen and (min-width: 768px) {
+    .product-container > div{
+        flex-direction: row;
+        gap: 0 2rem;
+        justify-content: space-between;
+    }
+}

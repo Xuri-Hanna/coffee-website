@@ -1,0 +1,69 @@
+.introduction-container{
+    background: rgba(255, 251, 245, 1);
+
+}
+.introduction-container .primary-button{
+    margin-top: 50px;
+}
+.introduction-container h1{
+    color: rgb(228, 206, 175);
+    margin: 0;
+    text-align: center;
+}
+.introduction-container p{
+    color: rgb(188, 110, 50);
+    line-height: 2;
+    font-size: large;
+}
+.introduction-container .image-wrapper{
+    min-width: 250px;
+    width: 100%;
+    height: 380px;
+    overflow:hidden
+}
+.introduction-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.introduction-container > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    align-items: center;
+}
+.introduction-container > .content-wrapper{
+    display: flex;
+    min-width: 150px;
+    flex-direction: column;
+}
+.introduction-container .sub-title{
+    color: rgb(80, 44, 20);
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.introduction-container .sub-content{
+    color: rgb(80, 44, 20);
+    text-align: center;
+}
+.introduction-container .sub-title{
+    color: rgb(80, 44, 20);
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+@media screen and (min-width: 768px) {
+    .introduction-container > div > div{
+        flex-direction: row;
+    }
+    .introduction-container .image-wrapper{
+        max-width: 380px;
+    }
+    .introduction-container .main-title{
+        font-size: xxx-large;
+    }
+}

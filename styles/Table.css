@@ -1,0 +1,67 @@
+@import "MainBase.css";
+.table-container{
+    background: rgba(255, 251, 245, 1);
+    padding-top: 100px;
+}
+.table-container > div{
+    overflow-x: auto;
+}
+.table-container .title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.title .primary-button{
+    margin: 0 !important;
+}
+.table-container .main-title{
+    color: rgb(80, 44, 20);
+    font-size: xxx-large;
+}
+.table-container table{
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin-top: 20px;
+}
+table th{
+    color: rgb(188, 110, 50);
+    font-weight: bold;
+    font-size: x-large;
+}
+table td{
+    font-size: large;
+    color: rgb(80, 44, 20);
+}
+table td,table th{
+    border: 2px dashed rgb(80, 44, 20);
+    text-align: center;
+    padding: 1rem;
+
+}
+table .buttons{
+    width: 30%;
+}
+table .primary-button{
+    display: inline-block;
+}
+.buttons form{
+    width: fit-content;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.table-container .actions{
+    display: flex;
+    justify-content: space-between;
+}
+.actions h1{
+    color: rgb(188, 110, 50);
+}
+@media screen and (min-width: 768px){
+    .table-container .title{
+        flex-direction: row;
+    }
+}

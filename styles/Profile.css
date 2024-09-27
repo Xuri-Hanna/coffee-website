@@ -1,0 +1,63 @@
+@import "MainBase.css";
+.profile-container{
+    background: rgba(255, 251, 245, 1);
+    padding-top: 100px;
+}
+.profile-container .main-title{
+    color: rgb(80, 44, 20);
+    font-size: xxx-large;
+    margin-top: 100px;
+}
+.profile-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    border-radius: 50px;
+    margin: 0 auto;
+
+}
+
+.profile-container .image-wrapper{
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.image-wrapper input{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.profile-container .input-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+.input-wrapper label{
+    color: rgb(80, 44, 20);
+    font-weight: bold;
+    font-size: large;
+}
+.profile-container input{
+    flex: 1;
+}

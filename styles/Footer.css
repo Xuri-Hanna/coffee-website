@@ -1,0 +1,44 @@
+@import "MainBase.css";
+.footer-container{
+    background: rgb(228, 206, 175);
+}
+.footer-container > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-container> div > div:nth-child(2){
+    flex: 1;
+    max-width: 500px;
+}
+.footer-container .main-title{
+    font-weight: bolder;
+    line-height: 1.3;
+}
+.footer-container p{
+    font-size: small;
+}
+.footer-container h3,p{
+    margin: 0;
+}
+.footer-container > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-container .icons-wrapper{
+    display: flex;
+    gap: 10px;
+}
+.footer-container img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+    .footer-container > div{
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+

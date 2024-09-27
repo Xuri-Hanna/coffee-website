@@ -1,0 +1,67 @@
+@import "MainBase.css";
+.products-container{
+    background: rgba(255, 251, 245, 1);
+    padding-top: 100px;
+}
+.products-container > div{
+    overflow-x: auto;
+}
+.products-container .title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.title .primary-button{
+    margin: 0 !important;
+}
+.products-container .main-title{
+    color: rgb(80, 44, 20);
+    font-size: xxx-large;
+}
+.products-container table{
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin-top: 20px;
+}
+table th{
+    color: rgb(188, 110, 50);
+    font-weight: bold;
+    font-size: x-large;
+}
+table td{
+    font-size: large;
+    color: rgb(80, 44, 20);
+}
+table td,table th{
+    border: 2px dashed rgb(80, 44, 20);
+    text-align: center;
+    padding: 1rem;
+
+}
+table .buttons{
+    width: 30%;
+}
+table .primary-button{
+    display: inline-block;
+}
+.buttons form{
+    width: fit-content;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.products-container .actions{
+    display: flex;
+    justify-content: space-between;
+}
+.actions h1{
+    color: rgb(188, 110, 50);
+}
+@media screen and (min-width: 768px){
+    .products-container .title{
+        flex-direction: row;
+    }
+}

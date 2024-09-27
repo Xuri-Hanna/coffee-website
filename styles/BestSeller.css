@@ -1,0 +1,56 @@
+@import "MainBase.css";
+.bestseller-container{
+    background: rgba(228, 206, 175, 1);
+}
+.bestseller-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bestseller-container h1{
+    color: rgb(188, 110, 50);
+    margin: 0;
+    text-align: center;
+}
+
+.bestseller-container .image-wrapper{
+    max-width: 380px;
+    width: 100%;
+}
+.bestseller-container > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    align-items: center;
+}
+.bestseller-container > .content-wrapper{
+    display: flex;
+    min-width: 150px;
+    flex-direction: column;
+}
+.bestseller-container .sub-title{
+    color: rgb(80, 44, 20);
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.bestseller-container .sub-content{
+    color: rgb(80, 44, 20);
+    text-align: center;
+}
+.bestseller-container .primary-button{
+    margin-top: 10px;
+}
+.bestseller-container > div > div >.primary-button{
+    width: 200px;
+}
+@media screen and (min-width: 768px) {
+    .bestseller-container > div > div{
+        flex-direction: row;
+    }
+
+    .bestseller-container .main-title{
+        font-size: xxx-large;
+    }
+}
